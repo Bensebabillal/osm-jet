@@ -270,7 +270,7 @@ a.quiet:visited {
   &::before {
     @include font-icon;
 
-    content: "";
+    content: $icon-edit;
 
     margin-right: 8px;
 
