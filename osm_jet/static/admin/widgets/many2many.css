@@ -25,9 +25,10 @@
 
 .wdg-SelectMultiple_Old select,
 .wdg-SelectMultiple_New select {
-  width: 250px;
+  /* width: 250px; */
   height: 100px;
   padding: 0;
+  margin-bottom: 10px;
 
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -64,7 +65,9 @@
   color: #42cf77;
 }
 .wdg-SelectMultiple_Control:first-child {
-  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 .wdg-SelectMultiple_Control svg {
   width: 24px;
@@ -108,15 +111,17 @@
   }
 
   .wdg-SelectMultiple_Control:first-child {
-    margin-bottom: 0;
+    margin-bottom: 10;
+    margin-left: auto;
+    margin-right: auto;
     margin-right: 8px;
   }
 
   .wdg-SelectMultiple_Control-right {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 
   .wdg-SelectMultiple_Control-left {
-    transform: none
+    transform: none;
   }
 }
