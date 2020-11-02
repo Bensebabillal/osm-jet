@@ -10,7 +10,8 @@ a {
   color: $link-color;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: $hover-link-color;
 }
 
@@ -20,7 +21,10 @@ a img {
 
 /* GLOBAL DEFAULTS */
 
-p, ol, ul, dl {
+p,
+ol,
+ul,
+dl {
   margin: 0.2em 0 0.8em;
 }
 
@@ -30,7 +34,11 @@ p {
   line-height: 140%;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
 }
 
@@ -84,7 +92,8 @@ li ul {
   margin-bottom: 0;
 }
 
-dt, dd {
+dt,
+dd {
   line-height: 20px;
 }
 
@@ -120,8 +129,10 @@ blockquote {
   color: #777;
 }
 
-code, pre {
-  font-family: 'Bitstream Vera Sans Mono', Monaco, 'Courier New', Courier, monospace;
+code,
+pre {
+  font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier,
+    monospace;
 
   font-size: 12px;
 
@@ -175,7 +186,9 @@ p.mini {
   margin-top: -3px;
 }
 
-.help, p.help, form p.help {
+.help,
+p.help,
+form p.help {
   font-size: 12px;
 
   color: #757575;
@@ -185,11 +198,18 @@ p.mini {
   cursor: help;
 }
 
-p img, h1 img, h2 img, h3 img, h4 img, td img {
+p img,
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+td img {
   vertical-align: middle;
 }
 
-.quiet, a.quiet:link, a.quiet:visited {
+.quiet,
+a.quiet:link,
+a.quiet:visited {
   font-weight: normal;
 
   color: $dim-text-color;
@@ -243,13 +263,14 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
   }
 }
 
-.changelink, .inlinechangelink {
+.changelink,
+.inlinechangelink {
   vertical-align: middle;
 
   &::before {
     @include font-icon;
 
-    content: $icon-edit-icon;
+    content: "";
 
     margin-right: 8px;
 
@@ -300,9 +321,12 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
 
 /* BOOLEAN ICONS */
 
-img[src$='admin/img/icon-yes.gif'], img[src$='admin/img/icon-yes.svg'],
-img[src$='admin/img/icon-no.gif'], img[src$='admin/img/icon-no.svg'],
-img[src$='admin/img/icon-unknown.gif'], img[src$='admin/img/icon-unknown.svg'] {
+img[src$="admin/img/icon-yes.gif"],
+img[src$="admin/img/icon-yes.svg"],
+img[src$="admin/img/icon-no.gif"],
+img[src$="admin/img/icon-no.svg"],
+img[src$="admin/img/icon-unknown.gif"],
+img[src$="admin/img/icon-unknown.svg"] {
   display: none;
 
   + span {
