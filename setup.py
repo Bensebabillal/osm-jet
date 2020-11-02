@@ -14,7 +14,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django',
-        'django-jet',
+        'django-jet2',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
