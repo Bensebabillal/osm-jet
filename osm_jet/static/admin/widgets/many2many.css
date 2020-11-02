@@ -82,6 +82,8 @@
 
 .wdg-SelectMultiple_Control-left {
   transform: rotate(-90deg);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wdg-SelectMultiple_SubText {
