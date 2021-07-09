@@ -1,4 +1,4 @@
-from cms.apps.pages.templatetags.admin_pages import can_add_versions
+# from cms.apps.pages.templatetags.admin_pages import can_add_versions
 from django import template
 
 register = template.Library()
@@ -23,7 +23,7 @@ def save_buttons(context):
     has_delete_permission = context['has_delete_permission']
     show_delete = context.get('show_delete', change)  # show_delete is not set on creation pages
     show_return = context.get('show_return', True)
-    save_as_version = context.get('save_as_version', True) and can_add_versions(context)
+    save_as_version = context.get('save_as_version', True)
 
     context.update({
         'show_delete_link': has_delete_permission and not is_popup and show_delete,
